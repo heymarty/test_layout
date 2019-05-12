@@ -14,12 +14,17 @@
 }
 
 @font-face {
+    font-family: Raleway-SemiBold;
+    src: url(../fonts/RRaleway-SemiBold.ttf);
+}
+
+@font-face {
     font-family: Montserrat-Light;
     src: url(../fonts/Montserrat-Light.ttf);
 }
 
 body {
-	font-family: Montserrat-Light;
+	font-family: Montserrat Light;
 }
 
 h1,
@@ -51,7 +56,7 @@ p {
 }
 
 .logo_name {
-	font-family: Raleway-Regular;
+	font-family: Raleway Regular;
 	color: #fff;
 	font-size: 34px;
     margin: 8px 0 0;
@@ -165,13 +170,13 @@ input::-webkit-search-cancel-button {
 }
 
 .offer_title {
-	font-family: Raleway-Medium;
+	font-family: Raleway Medium;
 	font-size: 36px;
     padding: 0 0 5px 0;
 }
 
 .main_offer_title {
-	font-family: Raleway-ExtraBold;
+	font-family: Raleway ExtraBold;
 	font-size: 52px;
 	padding: 0 0 10px 0;
 }
@@ -180,13 +185,13 @@ input::-webkit-search-cancel-button {
 	font-size: 16px;
 	width: 570px;
     margin: 0 auto;
-    line-height: 1.5;
+    line-height: 1.5em;
    	padding: 0 0 50px 0;
 }
 
 .offer_button {
 	display: block;
-	font-family: Raleway-ExtraBold;
+	font-family: Raleway ExtraBold;
 	font-size: 14px;
 	color: #fff;
 	text-decoration: none;
@@ -218,3 +223,87 @@ input::-webkit-search-cancel-button {
 	text-decoration: none;
     padding: 0 5px 0 0;
 }
+
+/* Вторая секция */
+
+.features {
+    padding: 49px 0 40px 0;
+}
+
+.features_item:after {
+	content: "";
+	display: block;
+	width: 70px;
+	height: 3px;
+	background: #f1eee9;
+	margin: 30px 110px 0;
+}
+
+.features_item:hover:after {
+	background: #c7b299;
+}
+
+.features_item:hover .features_item_span{
+	color: #c7b299;
+}
+
+.features_item:hover .features_svg{
+	fill: #c7b299;
+}
+
+.features_item_span {
+	display: block;
+	font-family: Raleway SemiBold;
+	font-size: 22px;
+	color: #555;
+	text-align: center;
+	padding: 25px 0 16px 0;
+}
+
+.features_svg {
+	fill: #555;
+    display: block;
+    margin: 0 auto;
+}
+
+.features_item_text {
+	text-align: center;
+	color: #8c8c8c;
+	font-size: 14px;
+	line-height: 1.714em;
+}
+
+
+/* Третья секция */
+
+.examples {
+	background: #fbfaf8;
+}
+
+.examples_title {
+	font-family: Raleway SemiBold;
+	font-size: 30px;
+	color: #555;
+	text-align: center;
+	padding: 40px 0 30px 0;
+}
+
+.examples_text {
+	text-align: center;
+	font-size: 16px;
+	color: #8c8c8c;
+	line-height: 1.75em;
+    width: 720px;
+    display: block;
+    margin: 0 auto;
+    padding: 0px 0 7px 0;
+}
+
+.examples_bg {
+	background-image: url(../img/bg-center.jpg), url(../img/bg-left.jpg), url(../img/bg-right.jpg);
+	min-height: 482px;
+    background-repeat: no-repeat;
+    background-position: bottom center, bottom left, bottom right;
+    background-size: 62.6%
+}
+
